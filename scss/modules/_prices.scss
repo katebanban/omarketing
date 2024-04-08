@@ -1,0 +1,118 @@
+.prices {
+	background: var(--light-grey);
+	padding: 130px 0;
+
+	&__body {
+	}
+
+	&__title {
+		margin: 0;
+
+		&:not(:last-child) {
+			margin-bottom: 90px;
+		}
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		--gap: 30px;
+		--column: 3;
+		--width: calc((100% - var(--gap) * (var(--column) - 1)) / var(--column));
+
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--gap);
+	}
+
+	&__item {
+		flex: 0 1 var(--width);
+
+		background: var(--white);
+		padding: 25px 25px 55px;
+		text-align: center;
+		color: var(--title-color);
+	}
+}
+
+.prices-item {
+	&__category {
+		display: block;
+		text-align: left;
+
+		font-weight: 700;
+		font-size: rem(16);
+		line-height: lh(22, 16);
+
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__price-box {
+		position: relative;
+		display: inline-flex; // по сути то же самое, что и inline-block
+
+		&:not(:last-child) {
+			margin-bottom: 50px;
+		}
+	}
+
+	&__price-currency {
+		position: absolute;
+		top: 15px; // на глаз
+		left: -5px;
+
+		display: inline-block;
+		transform: translateX(-100%);
+
+		font-size: rem(40);
+		line-height: lh(54, 40);
+
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+	}
+
+	&__price {
+		font-size: rem(80);
+		line-height: lh(109, 80);
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		&:not(:last-child) {
+			margin-bottom: 70px;
+		}
+	}
+
+	&__list-item {
+		font-size: rem(16);
+		line-height: lh(22, 16);
+
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: inherit;
+
+		font-family: var(--second-font);
+		text-transform: uppercase;
+		font-weight: 700;
+		line-height: lh(17, 14);
+		letter-spacing: 1.2px;
+		transition: all 0.3s;
+
+		&:hover {
+			color: var(--yellow);
+		}
+	}
+}

@@ -1,0 +1,115 @@
+.expertise {
+	background: var(--white);
+	padding: 130px 0;
+
+	&__body {
+	}
+
+	&__title {
+		margin: 0;
+
+		&:not(:last-child) {
+			margin-bottom: 90px;
+		}
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		gap: 50px; // на глаз
+
+		&:not(:last-child) {
+			margin-bottom: 110px;
+		}
+	}
+
+	&__info-list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		flex: 0 0 370px;
+	}
+
+	&__info-text {
+		flex: 0 1 auto;
+
+		p {
+			margin: 0;
+
+			&:not(:last-child) {
+				margin-bottom: 25px;
+			}
+		}
+		
+	}
+
+	&__cards {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 40px; // на глаз
+	}
+
+	&__card {
+	}
+}
+
+.info-list {
+
+	&__item {
+		font-weight: 400;
+		font-size: rem(11);
+		line-height: lh(20, 11);
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		padding-bottom: 30px;
+	}
+
+	&__item-text {
+		margin: 0;
+	}
+
+	&__item-line {
+	}
+}
+
+
+.expertise-card {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px; // на глаз
+
+	&__icon {
+		flex: 0 0 50px;
+	}
+
+	&__content {
+		flex: 0 1 auto;
+	}
+
+	&__title {
+		margin: 0;
+
+		text-transform: uppercase;
+		font-family: var(--second-font);
+		font-weight: 700;
+		font-size: rem(14);
+		line-height: lh(20, 14);
+		letter-spacing: 4px;
+		color: var(--title-color);
+
+		&:not(:last-child) {
+			margin-bottom: 18px;
+		}
+	}
+
+	&__text {
+		margin: 0;
+
+		color: var(--text-color);
+	}
+}

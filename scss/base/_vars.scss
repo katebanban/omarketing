@@ -1,0 +1,35 @@
+// ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ (с ними можно работать из JS)
+:root {
+	// colors
+	--white: #fff;
+	--light-grey: #F6F8FA;
+	--yellow: #FCBB08;
+	--purple: #432041;
+	--text-color: #373A39;
+	--title-color: #242121;
+	--progress-line-bg: #F0F0F0;
+	--portfolio-btn-hover: #9c9c9c;
+	--portfolio-cards-hover: #4c4a4a;
+	--portfolio-cards-hover-bd: #666565;
+	--footer-top: #333;
+	--footer-bottom: #2a2c2b;
+
+	// sizes
+	--container-width: 1170px;
+	--container-gap: 15px;
+	--header-height: 94px;
+
+	// fonts
+	--main-font: 'Open Sans', sans-serif;
+	--second-font: 'Montserrat', sans-serif;
+	--third-font: 'Merriweather', serif;
+}
+
+// Функции CSS
+@function rem($px) {
+	@return calc(($px / 16) * 1rem);
+}
+
+@function lh($line-height, $font-size) {
+	@return calc(($line-height / $font-size) * 100%);
+}

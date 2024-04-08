@@ -1,0 +1,25 @@
+.partners {
+	background: var(--white);
+	padding: 70px 0 95px;
+
+	&__body {
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 55px;
+		//flex-wrap: wrap;
+	}
+
+	&__item {
+		img {
+			display: block;
+		}
+	}
+}

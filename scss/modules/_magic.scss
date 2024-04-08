@@ -1,0 +1,46 @@
+.magic {
+	background: var(--light-grey);
+	padding: 130px 0;
+	position: relative;
+
+	&__body {
+		max-width: 50%;
+		margin-left: auto;
+		padding-left: 130px;
+	}
+
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		height: 100%;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__title {
+		margin: 0;
+
+		&:not(:last-child) {
+			margin-bottom: 65px;
+		}
+	}
+
+	&__text {
+		p {
+			margin: 0;
+
+			&:not(:last-child) {
+				margin-bottom: 25px;
+			}
+		}
+	}
+}

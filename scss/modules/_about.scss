@@ -1,0 +1,30 @@
+.about {
+	background: var(--light-grey);
+	padding: 130px 0;
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		gap: 30px; // отступ безопасности, на глаз
+	}
+
+	&__title {
+		margin: 0;
+		flex: 0 1 370px; // на глаз
+		align-self: flex-start; // чтоб заголовок не растягивался по высоте вместе с флексом
+		//font-size: rem(48);
+		//line-height: lh(75, 48);
+	}
+
+	&__content {
+		flex: 0 1 770px;
+
+		p {
+			margin: 0;
+
+			&:not(:last-child) {
+				margin-bottom: 16px; // на глаз
+			}
+		}
+	}
+}

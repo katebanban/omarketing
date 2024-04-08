@@ -1,0 +1,40 @@
+.facts {
+	padding: 130px 0;
+	background: var(--white);
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		gap: 30px;
+	}
+
+	&__item {
+		text-align: center;
+		
+		span {
+			display: block;
+
+			font-family: var(--second-font);
+			font-weight: 700;
+			font-size: rem(60);
+			line-height: lh(73, 60);
+			color: var(--title-color);
+
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+
+		p {
+			margin: 0;
+
+			font-weight: 400;
+			line-height: lh(19, 14);
+		}
+	}
+}

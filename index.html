@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>O...marketing</title>
+
+	<link href="./libs/normalize.css" rel="stylesheet">
+	<link href="./libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+
+	<!-- ! defer для скриптов в head ОБЯЗАТЕЛЕН -->
+	<script src="./libs/swiper/swiper-bundle.min.js" defer></script>
+	<script src="./js/script.js" defer></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<a class="header__logo logo" href="#">
+						<svg width="74" height="44" viewBox="0 0 74 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M71.2914 5.53442L72.7552 5.73892C73.0345 5.77799 73.2481 6.0241 73.2465 6.30492C73.2427 6.93903 73.1855 7.57665 73.0767 8.20014C72.823 9.6534 72.2333 11.0565 71.3237 12.3705C70.8149 13.1055 70.2207 13.7924 69.5473 14.4247C69.0643 14.8783 68.5405 15.3038 67.9782 15.6991C65.3635 17.5373 62.2234 18.5098 59.0707 18.4695L59.1064 43.4216H55.6504L55.6169 25.0453L46.5064 40.3616H44.8504L35.7424 25.1597V43.4216H32.2864V18.2216H35.2384L45.7453 35.9227L56.1184 18.2216H56.3027C49.6479 17.1692 45.0944 13.018 43.9527 6.82052C43.853 6.27989 43.9592 5.74836 44.2597 5.28351C44.4565 4.97903 44.5121 4.61093 44.4122 4.27358L43.5003 1.1924C43.4146 0.902565 43.576 0.609586 43.8608 0.538267L45.9446 0.0157571C46.0815 -0.0186288 46.2291 0.00377425 46.3549 0.077968C46.4808 0.152091 46.5746 0.27188 46.6158 0.411131L47.5666 3.6233C47.7107 4.11037 48.0486 4.51658 48.4935 4.73795C48.7089 4.84509 48.9167 4.96939 49.1113 5.10742C49.2546 5.20895 49.3622 5.31789 49.4487 5.40545L49.4551 5.41196C49.4856 5.44278 49.5142 5.47171 49.5384 5.49376C49.7628 5.69789 49.9825 5.89919 50.1986 6.0972L50.2068 6.10465C53.2647 8.90638 55.4741 10.9307 59.6171 11.1666C63.7809 11.4037 67.32 9.97042 69.8516 7.02044C70.1932 6.62252 70.5074 6.19932 70.7855 5.76253C70.8928 5.59435 71.0883 5.50609 71.2914 5.53442ZM45.7394 1.19465L44.6873 1.45843L45.298 3.52147L45.9404 3.40296L46.3696 3.32381L45.7394 1.19465ZM58.431 17.3677C62.3411 17.5904 66.1815 16.0736 68.7982 13.6168C70.3433 12.1661 71.4614 10.3877 71.9162 8.4455L71.7603 8.39789C71.1409 9.86352 70.2332 11.1648 69.082 12.246C68.5209 12.7728 67.9024 13.2472 67.2311 13.6634C65.0209 15.0337 62.379 15.6741 59.5909 15.5153C53.877 15.1901 49.4458 12.8023 47.1135 8.79211C46.9603 8.52867 47.0428 8.20125 47.298 8.06084C47.5531 7.92035 47.8841 8.01993 48.0372 8.28333C50.1686 11.9479 54.274 14.1329 59.5974 14.436C63.0163 14.6307 66.1186 13.5185 68.3179 11.4535C69.3189 10.5137 70.1318 9.37634 70.7036 8.07506L70.4998 8.01282L70.4616 8.00118C69.1777 9.42501 67.6507 10.5128 65.9181 11.2374C64.0081 12.0361 61.8859 12.3755 59.6105 12.2459C55.0703 11.9873 52.6132 9.73617 49.5023 6.88591C49.2845 6.68634 49.063 6.48346 48.8367 6.27742C48.7879 6.23298 48.7444 6.18889 48.7022 6.14618L48.7008 6.14479C48.6358 6.07896 48.5796 6.02204 48.5197 5.97965C48.3735 5.87593 48.217 5.7824 48.0546 5.70159C47.4784 5.415 47.0122 4.94238 46.7257 4.36708L45.5369 4.58636C45.5527 5.04785 45.4283 5.50761 45.1726 5.90335C45.065 6.06982 44.9497 6.33916 45.0119 6.67657C46.1692 12.9585 51.1857 16.9551 58.431 17.3677ZM71.8661 7.31629L72.0986 7.38728C72.1238 7.17187 72.1423 6.95545 72.1541 6.73875L71.5225 6.6505C71.4172 6.80614 71.3077 6.95987 71.1947 7.11122L71.8661 7.31629ZM8.064 42.7376C9.72 43.3856 11.508 43.7096 13.428 43.7096C15.348 43.7096 17.112 43.3976 18.72 42.7736C20.352 42.1256 21.768 41.2256 22.968 40.0736C24.192 38.8976 25.128 37.5296 25.776 35.9696C26.448 34.4096 26.784 32.6936 26.784 30.8216C26.784 28.9496 26.448 27.2336 25.776 25.6736C25.128 24.1136 24.192 22.7576 22.968 21.6056C21.768 20.4296 20.352 19.5296 18.72 18.9056C17.112 18.2576 15.348 17.9336 13.428 17.9336C11.484 17.9336 9.696 18.2576 8.064 18.9056C6.432 19.5536 5.016 20.4656 3.816 21.6416C2.616 22.7936 1.68 24.1496 1.008 25.7096C0.336 27.2696 0 28.9736 0 30.8216C0 32.6696 0.336 34.3736 1.008 35.9336C1.68 37.4936 2.616 38.8616 3.816 40.0376C5.016 41.1896 6.432 42.0896 8.064 42.7376ZM17.28 39.7856C16.104 40.2656 14.82 40.5056 13.428 40.5056C12.012 40.5056 10.704 40.2656 9.504 39.7856C8.328 39.3056 7.296 38.6336 6.408 37.7696C5.52 36.8816 4.824 35.8496 4.32 34.6736C3.84 33.4976 3.6 32.2136 3.6 30.8216C3.6 29.4296 3.84 28.1456 4.32 26.9696C4.824 25.7936 5.52 24.7736 6.408 23.9096C7.296 23.0216 8.328 22.3376 9.504 21.8576C10.704 21.3776 12.012 21.1376 13.428 21.1376C14.82 21.1376 16.104 21.3776 17.28 21.8576C18.48 22.3376 19.512 23.0216 20.376 23.9096C21.264 24.7736 21.948 25.7936 22.428 26.9696C22.932 28.1456 23.184 29.4296 23.184 30.8216C23.184 32.2136 22.932 33.4976 22.428 34.6736C21.948 35.8496 21.264 36.8816 20.376 37.7696C19.512 38.6336 18.48 39.3056 17.28 39.7856Z"
+								fill="#333333" />
+						</svg>
+					</a>
+					<button class="menu-btn" type="button">
+						<span></span>
+					</button>
+					<nav class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__link" href="#">
+									HOME
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#about">
+									ABOUT US
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#portfolio">
+									PORTFOLIO
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#team">
+									OUR TEAM
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#">
+									BLOG
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#contacts">
+									CONTACT
+								</a>
+							</li>
+
+							<!--<li class="menu__item">
+								<a class="menu__link" href="#">
+									HOME
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#about">
+									ABOUT US
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#portfolio">
+									PORTFOLIO
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#team">
+									OUR TEAM
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#">
+									BLOG
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#contacts">
+									CONTACT
+								</a>
+							</li>
+
+							<li class="menu__item">
+								<a class="menu__link" href="#">
+									HOME
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#about">
+									ABOUT US
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#portfolio">
+									PORTFOLIO
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#team">
+									OUR TEAM
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#">
+									BLOG
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#contacts">
+									CONTACT
+								</a>
+							</li>
+
+							<li class="menu__item">
+								<a class="menu__link" href="#">
+									HOME
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#about">
+									ABOUT US
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#portfolio">
+									PORTFOLIO
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#team">
+									OUR TEAM
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#">
+									BLOG
+								</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#contacts">
+									CONTACT
+								</a>
+							</li>-->
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="first">
+				<div class="container">
+					<div class="first__bg">
+						<img src="./images/first/first-bg.jpg" alt="first background">
+					</div>
+					<div class="first__body">
+						<h1 class="first__title">
+							O...Marketing
+							<h4 class="first__subtitle">
+								Digital marketing agency
+							</h4>
+							<a class="first__icon" href="#about">
+								<svg class="mouse-icon" width="26" height="43" viewBox="0 0 26 43" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path class="mouse-icon__circle" fill-rule="evenodd" clip-rule="evenodd"
+										d="M13 14C14.6569 14 16 12.6569 16 11C16 9.34315 14.6569 8 13 8C11.3431 8 10 9.34315 10 11C10 12.6569 11.3431 14 13 14Z"
+										fill="white" />
+									<rect class="mouse-icon__body" x="1" y="1" width="24" height="41" rx="12" stroke="white"
+										stroke-width="2" />
+								</svg>
+							</a>
+					</div>
+				</div>
+			</section>
+			<!--<section class="about" id="about">
+				<div class="container">
+					<div class="about__body">
+						<h2 class="about__title section-title">
+							About Us
+						</h2>
+						<div class="about__content">
+							<p>
+								Практика показывает, что большие продажи далеко не всегда зависят от того, сколько вы потратите
+								на продвижение сайта и рекламную кампанию. Значительно сильнее конечный результат зависит от
+								правильной организации кампании. Мы достигаем максимальной эффективности и помогаем сберечь
+								бюджеты наших клиентов, используя стратегический интернет-маркетинг.
+							</p>
+							<p>
+								Определяем цели продвижения — что наш клиент хочет получить, когда работа будет сделана.
+								Проводим маркетинговые исследования рынка, целевой аудитории, конкурентной среды. При разработке
+								стратегии учитываем все имеющиеся данные.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="expertise">
+				<div class="container">
+					<div class="expertise__body">
+						<h2 class="expertise__title section-title">
+							Our Expertise
+						</h2>
+						<div class="expertise__info">
+							<ul class="expertise__info-list info-list">
+								<li class="info-list__item">
+									<p class="info-list__item-text">
+										Branding
+									</p>
+									<div class="info-list__item-line progress-line" style="--progress-width:90%;"
+										data-progress="90%"></div>
+								</li>
+								<li class="info-list__item">
+									<p class="info-list__item-text">
+										Design
+									</p>
+									<div class="info-list__item-line progress-line" style="--progress-width:80%;"
+										data-progress="80%"></div>
+								</li>
+								<li class="info-list__item">
+									<p class="info-list__item-text">
+										Development
+									</p>
+									<div class="info-list__item-line progress-line" style="--progress-width:85%;"
+										data-progress="85%"></div>
+								</li>
+							</ul>
+							<div class="expertise__info-text">
+								<p>
+									В стратегию интернет-маркетинга входит создание имиджевой и рекламной концепции, разработка
+									контент-стратегии, распределение использования различных каналов коммуникации.
+								</p>
+								<p>
+									Реализуем принятую стратегию, отслеживая промежуточные результаты, и корректируя будущие
+									действия с учетом изменений. Главной целью в этом процессе для нас является конечный
+									результат, а не следование планам.
+								</p>
+							</div>
+						</div>
+						<ul class="expertise__cards">
+							<li class="expertise__card expertise-card">
+								<div class="expertise-card__icon">
+									<img src="./images/expertise/icons/design.svg" alt="expertise design">
+								</div>
+								<div class="expertise-card__content">
+									<h4 class="expertise-card__title">
+										Graphic design
+									</h4>
+									<p class="expertise-card__text">
+										Рекламный дизайн, дизайн упаковки, этикетки, листовок, каталогов, разработка презентаций,
+										дизайн выставочных стендов
+									</p>
+								</div>
+							</li>
+							<li class="expertise__card expertise-card">
+								<div class="expertise-card__icon">
+									<img src="./images/expertise/icons/dev.svg" alt="expertise development">
+								</div>
+								<div class="expertise-card__content">
+									<h4 class="expertise-card__title">
+										Web development
+									</h4>
+									<p class="expertise-card__text">
+										Разрабатываем веб сайты от концепции до реализации. Дизайн, верстка, программирование и
+										запуск сайт в сеть
+									</p>
+								</div>
+							</li>
+							<li class="expertise__card expertise-card">
+								<div class="expertise-card__icon">
+									<img src="./images/expertise/icons/marketing.svg" alt="expertise marketing">
+								</div>
+								<div class="expertise-card__content">
+									<h4 class="expertise-card__title">
+										Marketing
+									</h4>
+									<p class="expertise-card__text">
+										Разрабатываем маркетинговое и рекламное продвижение Вашего продукта или услуги под ключ и
+										на любой бюджет
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="magic">
+				<div class="container">
+					<div class="magic__body">
+						<div class="magic__img">
+							<img src="./images/magic/dog.jpg" alt="magic dog">
+						</div>
+						<h2 class="magic__title section-title">
+							Let's make magic
+						</h2>
+						<div class="magic__text">
+							<p>
+								Маркетинговое агентство MGN: полный комплекс маркетинговых, рекламных и дизайнерских услуг в
+								Харькове и Украине: маркетинговые исследования рынков, товаров, потребителей, планирование
+								комплекса маркетинга, реклама, проведение рекламных кампаний, брендинг, рекламный дизайн, pr.
+							</p>
+							<p>
+								Нами накоплен немалый опыт работы в реальном бизнесе, в самых различных отраслях – от
+								недвижимости до аптечного и медицинского бизнеса. Мы не просто беремся решать задачи наших
+								клиентов, мы сами вышли из бизнес-среды и понимаем суть бизнес-процессов.
+							</p>
+							<p>
+								Мы говорим с бизнесом на одном языке!
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="portfolio" id="portfolio">
+				<div class="container">
+					<div class="portfolio__header">
+						<h2 class="portfolio__title section-title">
+							Portfolio
+						</h2>
+						<ul class="portfolio__filter-list filter-list">
+							<li class="filter-list__item">
+								<button class="filter-list__btn" type="button" data-filter-btn="all">
+									All
+								</button>
+							</li>
+							<li class="filter-list__item">
+								<button class="filter-list__btn" type="button" data-filter-btn="branding">
+									Branding
+								</button>
+							</li>
+							<li class="filter-list__item">
+								<button class="filter-list__btn" type="button" data-filter-btn="design">
+									Design
+								</button>
+							</li>
+							<li class="filter-list__item">
+								<button class="filter-list__btn" type="button" data-filter-btn="photography">
+									Photography
+								</button>
+							</li>
+							<li class="filter-list__item">
+								<button class="filter-list__btn" type="button" data-filter-btn="illustration">
+									Illustration
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="portfolio__list portfolio-list">
+					<li class="portfolio-list__item span17" data-filter-category="photography branding">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-1.jpg" alt="image 1">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span10" data-filter-category="photography">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-2.jpg" alt="image 2">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span13" data-filter-category="illustration">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-3.jpg" alt="image 3">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span11" data-filter-category="branding">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-4.jpg" alt="image 4">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span10" data-filter-category="branding">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-5.jpg" alt="image 5">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span19" data-filter-category="design">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-6.jpg" alt="image 6">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span17" data-filter-category="photography">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-7.jpg" alt="image 7">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span13" data-filter-category="design">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-8.jpg" alt="image 8">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span10" data-filter-category="illustration">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-9.jpg" alt="image 9">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span17" data-filter-category="photography branding">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-1.jpg" alt="image 1">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span10" data-filter-category="photography">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-2.jpg" alt="image 2">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span13" data-filter-category="illustration">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-3.jpg" alt="image 3">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span11" data-filter-category="branding">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-4.jpg" alt="image 4">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span10" data-filter-category="branding">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-5.jpg" alt="image 5">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span19" data-filter-category="design">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-6.jpg" alt="image 6">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span17" data-filter-category="photography">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-7.jpg" alt="image 7">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span13" data-filter-category="design">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-8.jpg" alt="image 8">
+							<span>Show Project</span>
+						</a>
+					</li>
+					<li class="portfolio-list__item span10" data-filter-category="illustration">
+						<a class="portfolio-list__link" href="#">
+							<img src="./images/portfolio/img-3.jpg" alt="image 3">
+							<span>Show Project</span>
+						</a>
+					</li>
+				</ul>
+				<button class="portfolio__btn" type="button">
+					<div class="container">
+						<span>View more projects</span>
+					</div>
+				</button>
+			</section>
+			<div class="quote">
+				<div class="container">
+					<blockquote class="quote__blockquote">
+						<p class="quote__text">
+							«Неважно какую историю вы рассказываете, главное – сделайте своего покупателя героем»
+						</p>
+						<cite class="quote__author">Крис Броган</cite>
+					</blockquote>
+				</div>
+			</div>
+			<div class="video">
+				<video poster="./images/video/bg.jpg">
+					<source src="./video/video.webm" type="video/webm">
+					<source src="./video/video.mp4" type="video/mp4">
+					Простите, но ваш браузер не поддерживает встроенные видео.
+				</video>
+				<button class="video__btn" type="button">
+					<div class="video__btn-play">
+						<svg width="55" height="65" viewBox="0 0 55 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M3.04809 5.31272L48.8267 32.0164L3.04809 58.7201V5.31272ZM0 0.00285937V64.0271L54.8771 32.0136L0 0V0.00285937Z"
+								fill="white" />
+						</svg>
+					</div>
+					<div class="video__btn-pause">
+						<svg width="39" height="65" viewBox="0 0 39 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M0.727295 0V65H3.72729V0H0.727295ZM35.2728 0V65H38.2728V0H35.2728Z" fill="white" />
+						</svg>
+					</div>
+				</button>
+			</div>
+			<div class="facts">
+				<div class="container">
+					<ul class="facts__list">
+						<li class="facts__item">
+							<span>305</span>
+							<p>Web Designs</p>
+						</li>
+						<li class="facts__item">
+							<span>220</span>
+							<p>Logo Designs</p>
+						</li>
+						<li class="facts__item">
+							<span>52</span>
+							<p>Print Designs</p>
+						</li>
+						<li class="facts__item">
+							<span>88</span>
+							<p>Mobile Apps</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section class="featured">
+				<div class="container" style="--container-width: 1360px;">
+					<div class="featured__body">
+						<div class="featured__slider featured-slider swiper">
+							<div class="featured-slider__wrapper swiper-wrapper">
+								<div class="featured-slide swiper-slide">
+									<div class="featured-slide__wrapper">
+										<h3 class="featured-slide__title">
+											Анимированный логотип – тренд или необходимость?
+										</h3>
+										<p class="featured-slide__text">
+											Что представляет собой анимированный логотип, и в чем его преимущества? И почему сейчас
+											это модно? Давайте обсудим.
+										</p>
+									</div>
+								</div>
+								<div class="featured-slide swiper-slide">
+									<div class="featured-slide__wrapper">
+										<h3 class="featured-slide__title">
+											Анимированный логотип – тренд или необходимость?
+										</h3>
+										<p class="featured-slide__text">
+											Что представляет собой анимированный логотип, и в чем его преимущества? И почему сейчас
+											это модно? Давайте обсудим.
+										</p>
+									</div>
+								</div>
+								<div class="featured-slide swiper-slide">
+									<div class="featured-slide__wrapper">
+										<h3 class="featured-slide__title">
+											Анимированный логотип – тренд или необходимость?
+										</h3>
+										<p class="featured-slide__text">
+											Что представляет собой анимированный логотип, и в чем его преимущества? И почему сейчас
+											это модно? Давайте обсудим.
+										</p>
+									</div>
+								</div>
+								<div class="featured-slide swiper-slide">
+									<div class="featured-slide__wrapper">
+										<h3 class="featured-slide__title">
+											Анимированный логотип – тренд или необходимость?
+										</h3>
+										<p class="featured-slide__text">
+											Что представляет собой анимированный логотип, и в чем его преимущества? И почему сейчас
+											это модно? Давайте обсудим.
+										</p>
+									</div>
+								</div>
+								<div class="featured-slide swiper-slide">
+									<div class="featured-slide__wrapper">
+										<h3 class="featured-slide__title">
+											Анимированный логотип – тренд или необходимость?
+										</h3>
+										<p class="featured-slide__text">
+											Что представляет собой анимированный логотип, и в чем его преимущества? И почему сейчас
+											это модно? Давайте обсудим.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="featured-slider__pagination"></div>
+						</div>
+						<button class="featured-slider__btn slider__btn-prev" type="button">
+							<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M34.8297 18.6013H5.12463L19.3955 32.942L17.7539 34.5917L0.680359 17.4347L17.7562 0.27533L19.3979 1.925L5.12463 16.268H34.8297V18.6013Z"
+									fill="#333333" />
+							</svg>
+						</button>
+						<button class="featured-slider__btn slider__btn-next" type="button">
+							<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M34.1494 17.4347L17.0735 34.594L15.4319 32.9443L29.7028 18.6037H0V16.2703H29.7051L15.4319 1.925L17.0735 0.27533L34.1494 17.4347Z"
+									fill="#333333" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="team" id="team">
+				<div class="container">
+					<div class="team__body">
+						<h2 class="team__title section-title">
+							Our Team
+						</h2>
+						<ul class="team__list">
+							<li class="team__item team-item">
+								<div class="team-item__img">
+									<img src="./images/team/person-1.jpg" alt="team person 1">
+								</div>
+								<span class="team-item__name">Макс</span>
+								<span class="team-item__post">CEO</span>
+							</li>
+							<li class="team__item team-item">
+								<div class="team-item__img">
+									<img src="./images/team/person-2.jpg" alt="team person 2">
+								</div>
+								<span class="team-item__name">Аня</span>
+								<span class="team-item__post">Co-Founder</span>
+							</li>
+							<li class="team__item team-item">
+								<div class="team-item__img">
+									<img src="./images/team/person-3.jpg" alt="team person 3">
+								</div>
+								<span class="team-item__name">Мила</span>
+								<span class="team-item__post">Designer</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="prices">
+				<div class="container">
+					<div class="prices__body">
+						<h2 class="prices__title section-title">
+							Pricing Plans
+						</h2>
+						<ul class="prices__list">
+							<li class="prices__item prices-item">
+								<span class="prices-item__category">Basic</span>
+								<div class="prices-item__price-box">
+									<span class="prices-item__price-currency">$</span>
+									<span class="prices-item__price">290</span>
+								</div>
+								<ul class="prices-item__list">
+									<li class="prices-item__list-item">
+										1 Logo Design
+									</li>
+									<li class="prices-item__list-item">
+										1 Website Design
+									</li>
+									<li class="prices-item__list-item">
+										1 Domain Free
+									</li>
+									<li class="prices-item__list-item">
+										3 Month License
+									</li>
+									<li class="prices-item__list-item">
+										1 GB Storage
+									</li>
+								</ul>
+								<a class="prices-item__link" href="#">Choose Plan</a>
+							</li>
+							<li class="prices__item prices-item">
+								<span class="prices-item__category">Starter</span>
+								<div class="prices-item__price-box">
+									<span class="prices-item__price-currency">$</span>
+									<span class="prices-item__price">500</span>
+								</div>
+								<ul class="prices-item__list">
+									<li class="prices-item__list-item">
+										2 Logo Designs
+									</li>
+									<li class="prices-item__list-item">
+										2 Website Designs
+									</li>
+									<li class="prices-item__list-item">
+										1 Domain Free
+									</li>
+									<li class="prices-item__list-item">
+										6 Month License
+									</li>
+									<li class="prices-item__list-item">
+										1 GB Storage
+									</li>
+								</ul>
+								<a class="prices-item__link" href="#">Choose Plan</a>
+							</li>
+							<li class="prices__item prices-item">
+								<span class="prices-item__category">Professional</span>
+								<div class="prices-item__price-box">
+									<span class="prices-item__price-currency">$</span>
+									<span class="prices-item__price">1500</span>
+								</div>
+								<ul class="prices-item__list">
+									<li class="prices-item__list-item">
+										3 Logo Designs
+									</li>
+									<li class="prices-item__list-item">
+										3 Website Designs
+									</li>
+									<li class="prices-item__list-item">
+										2 Domains Free
+									</li>
+									<li class="prices-item__list-item">
+										12 Month License
+									</li>
+									<li class="prices-item__list-item">
+										2 GB Storage
+									</li>
+								</ul>
+								<a class="prices-item__link" href="#">Choose Plan</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<div class="partners">
+				<div class="container">
+					<div class="partners__body">
+						<ul class="partners__list">
+							<li class="partners__item">
+								<img src="./images/partners/partner-1.png" alt="partner 1">
+							</li>
+							<li class="partners__item">
+								<img src="./images/partners/partner-2.png" alt="partner 2">
+							</li>
+							<li class="partners__item">
+								<img src="./images/partners/partner-3.png" alt="partner 3">
+							</li>
+							<li class="partners__item">
+								<img src="./images/partners/partner-4.png" alt="partner 4">
+							</li>
+							<li class="partners__item">
+								<img src="./images/partners/partner-5.png" alt="partner 5">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<section class="contacts" id="contacts">
+				<div class="container">
+					<div class="contacts__body">
+						<div class="contacts__map">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d150506.0423583311!2d27.428560237240934!3d53.884527138293315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQuiwg0JzQuNC90YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sby!4v1712135057795!5m2!1sru!2sby"
+								width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+						<h2 class="contacts__title section-title">
+							Get in Touch
+						</h2>
+						<form class="contacts__form form" action="#">
+							<input class="form__input" type="text" name="name" placeholder="Имя" required>
+							<input class="form__input" type="email" name="email" placeholder="Email" required>
+							<textarea class="form__textarea form__input" name="text" placeholder="Ваше сообщение"
+								required></textarea>
+							<button class="form__btn" type="submit">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</section>-->
+		</main>
+		<!--<footer class="footer">
+			<div class="footer__top footer-top">
+				<div class="container">
+					<div class="footer-top__body">
+						<a class="footer-top__logo logo" href="#">
+							<svg width="74" height="44" viewBox="0 0 74 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M71.2914 5.53442L72.7552 5.73892C73.0345 5.77799 73.2481 6.0241 73.2465 6.30492C73.2427 6.93903 73.1855 7.57665 73.0767 8.20014C72.823 9.6534 72.2333 11.0565 71.3237 12.3705C70.8149 13.1055 70.2207 13.7924 69.5473 14.4247C69.0643 14.8783 68.5405 15.3038 67.9782 15.6991C65.3635 17.5373 62.2234 18.5098 59.0707 18.4695L59.1064 43.4216H55.6504L55.6169 25.0453L46.5064 40.3616H44.8504L35.7424 25.1597V43.4216H32.2864V18.2216H35.2384L45.7453 35.9227L56.1184 18.2216H56.3027C49.6479 17.1692 45.0944 13.018 43.9527 6.82052C43.853 6.27989 43.9592 5.74836 44.2597 5.28351C44.4565 4.97903 44.5121 4.61093 44.4122 4.27358L43.5003 1.1924C43.4146 0.902565 43.576 0.609586 43.8608 0.538267L45.9446 0.0157571C46.0815 -0.0186288 46.2291 0.00377425 46.3549 0.077968C46.4808 0.152091 46.5746 0.27188 46.6158 0.411131L47.5666 3.6233C47.7107 4.11037 48.0486 4.51658 48.4935 4.73795C48.7089 4.84509 48.9167 4.96939 49.1113 5.10742C49.2546 5.20895 49.3622 5.31789 49.4487 5.40545L49.4551 5.41196C49.4856 5.44278 49.5142 5.47171 49.5384 5.49376C49.7628 5.69789 49.9825 5.89919 50.1986 6.0972L50.2068 6.10465C53.2647 8.90638 55.4741 10.9307 59.6171 11.1666C63.7809 11.4037 67.32 9.97042 69.8516 7.02044C70.1932 6.62252 70.5074 6.19932 70.7855 5.76253C70.8928 5.59435 71.0883 5.50609 71.2914 5.53442ZM45.7394 1.19465L44.6873 1.45843L45.298 3.52147L45.9404 3.40296L46.3696 3.32381L45.7394 1.19465ZM58.431 17.3677C62.3411 17.5904 66.1815 16.0736 68.7982 13.6168C70.3433 12.1661 71.4614 10.3877 71.9162 8.4455L71.7603 8.39789C71.1409 9.86352 70.2332 11.1648 69.082 12.246C68.5209 12.7728 67.9024 13.2472 67.2311 13.6634C65.0209 15.0337 62.379 15.6741 59.5909 15.5153C53.877 15.1901 49.4458 12.8023 47.1135 8.79211C46.9603 8.52867 47.0428 8.20125 47.298 8.06084C47.5531 7.92035 47.8841 8.01993 48.0372 8.28333C50.1686 11.9479 54.274 14.1329 59.5974 14.436C63.0163 14.6307 66.1186 13.5185 68.3179 11.4535C69.3189 10.5137 70.1318 9.37634 70.7036 8.07506L70.4998 8.01282L70.4616 8.00118C69.1777 9.42501 67.6507 10.5128 65.9181 11.2374C64.0081 12.0361 61.8859 12.3755 59.6105 12.2459C55.0703 11.9873 52.6132 9.73617 49.5023 6.88591C49.2845 6.68634 49.063 6.48346 48.8367 6.27742C48.7879 6.23298 48.7444 6.18889 48.7022 6.14618L48.7008 6.14479C48.6358 6.07896 48.5796 6.02204 48.5197 5.97965C48.3735 5.87593 48.217 5.7824 48.0546 5.70159C47.4784 5.415 47.0122 4.94238 46.7257 4.36708L45.5369 4.58636C45.5527 5.04785 45.4283 5.50761 45.1726 5.90335C45.065 6.06982 44.9497 6.33916 45.0119 6.67657C46.1692 12.9585 51.1857 16.9551 58.431 17.3677ZM71.8661 7.31629L72.0986 7.38728C72.1238 7.17187 72.1423 6.95545 72.1541 6.73875L71.5225 6.6505C71.4172 6.80614 71.3077 6.95987 71.1947 7.11122L71.8661 7.31629ZM8.064 42.7376C9.72 43.3856 11.508 43.7096 13.428 43.7096C15.348 43.7096 17.112 43.3976 18.72 42.7736C20.352 42.1256 21.768 41.2256 22.968 40.0736C24.192 38.8976 25.128 37.5296 25.776 35.9696C26.448 34.4096 26.784 32.6936 26.784 30.8216C26.784 28.9496 26.448 27.2336 25.776 25.6736C25.128 24.1136 24.192 22.7576 22.968 21.6056C21.768 20.4296 20.352 19.5296 18.72 18.9056C17.112 18.2576 15.348 17.9336 13.428 17.9336C11.484 17.9336 9.696 18.2576 8.064 18.9056C6.432 19.5536 5.016 20.4656 3.816 21.6416C2.616 22.7936 1.68 24.1496 1.008 25.7096C0.336 27.2696 0 28.9736 0 30.8216C0 32.6696 0.336 34.3736 1.008 35.9336C1.68 37.4936 2.616 38.8616 3.816 40.0376C5.016 41.1896 6.432 42.0896 8.064 42.7376ZM17.28 39.7856C16.104 40.2656 14.82 40.5056 13.428 40.5056C12.012 40.5056 10.704 40.2656 9.504 39.7856C8.328 39.3056 7.296 38.6336 6.408 37.7696C5.52 36.8816 4.824 35.8496 4.32 34.6736C3.84 33.4976 3.6 32.2136 3.6 30.8216C3.6 29.4296 3.84 28.1456 4.32 26.9696C4.824 25.7936 5.52 24.7736 6.408 23.9096C7.296 23.0216 8.328 22.3376 9.504 21.8576C10.704 21.3776 12.012 21.1376 13.428 21.1376C14.82 21.1376 16.104 21.3776 17.28 21.8576C18.48 22.3376 19.512 23.0216 20.376 23.9096C21.264 24.7736 21.948 25.7936 22.428 26.9696C22.932 28.1456 23.184 29.4296 23.184 30.8216C23.184 32.2136 22.932 33.4976 22.428 34.6736C21.948 35.8496 21.264 36.8816 20.376 37.7696C19.512 38.6336 18.48 39.3056 17.28 39.7856Z"
+									fill="white" />
+							</svg>
+						</a>
+						<ul class="footer-top__social">
+							<li class="footer-top__social-item">
+								<a class="footer-top__social-link" href="#">Facebook</a>
+							</li>
+							<li class="footer-top__social-item">
+								<a class="footer-top__social-link" href="#">Twitter</a>
+							</li>
+							<li class="footer-top__social-item">
+								<a class="footer-top__social-link" href="#">Google+</a>
+							</li>
+							<li class="footer-top__social-item">
+								<a class="footer-top__social-link" href="#">Behance</a>
+							</li>
+							<li class="footer-top__social-item">
+								<a class="footer-top__social-link" href="#">Dribble</a>
+							</li>
+							<li class="footer-top__social-item">
+								<a class="footer-top__social-link" href="#">Instagram</a>
+							</li>
+						</ul>
+						<address class="footer-top__address">
+							<p class="footer-top__address-location">
+								Украина, Харьков, ул. Тобольская, 63
+							</p>
+							<a class="footer-top__address-phone" href="tel:3806765252222">(38067) 65 252 222</a>
+							<a class="footer-top__address-email" href="mailto:info@mail.com">info@mail.com</a>
+						</address>
+						<a class="footer-top__arrow-up" href="#">
+							<svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M16.354 7.89597L15.647 8.60297L8.5 1.45697L1.354 8.60297L0.647 7.89597L8.5 0.0429688L16.354 7.89597Z"
+									fill="white" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom footer-bottom">
+				<div class="container">
+					<div class="footer-bottom__body">
+						<p class="footer-bottom__copy">@2020 O...Marketing</p>
+					</div>
+				</div>
+			</div>
+		</footer>-->
+	</div>
+</body>
+
+</html>

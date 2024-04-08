@@ -1,0 +1,115 @@
+.featured {
+	background: var(--light-grey);
+
+	&__body {
+		position: relative;
+		padding: 0 95px;
+	}
+
+	&__slider {
+	}
+}
+
+.featured-slider {
+	&__wrapper {
+	}
+
+	&__pagination {
+		position: absolute;
+		z-index: 3;
+		bottom: 45px !important; // от себя
+		top: unset !important;
+
+		display: flex;
+		align-items: center;
+		gap: 13px;
+
+		span {
+			width: 6px;
+			height: 6px;
+			margin: 0 !important;
+			opacity: 1;
+			background: var(--portfolio-btn-hover);
+			transition: background 0.3s;
+
+			&.swiper-pagination-bullet-active {
+				width: 10px;
+				height: 10px;
+				opacity: 1;
+				background: var(--title-color);
+			}
+		}
+	}
+
+	&__btn {
+		padding: 0;
+		border: none;
+		background: transparent;
+
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		svg {
+			display: block;
+
+			path {
+				transition: all 0.3s;
+			}
+		}
+
+		&:hover {
+			svg path {
+				fill: var(--yellow);
+			}
+		}
+	}
+}
+
+.swiper {
+}
+
+.swiper-wrapper {
+}
+
+.featured-slide {
+	&__wrapper {
+		padding: 150px 0;
+	}
+
+	&__title {
+		margin: 0;
+
+		max-width: 625px; // на глаз, чтобы соотв. макету
+
+		font-family: var(--second-font);
+		font-weight: 700;
+		font-size: rem(32); // от себя, чтобы соотв. макету
+		line-height: lh(52, 32);
+		color: var(--title-color);
+		text-transform: uppercase;
+
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__text {
+		margin: 0;
+
+		max-width: 560px;
+	}
+}
+
+.swiper-slide {
+}
+
+.slider {
+	&__btn-prev {
+		left: 0px;
+	}
+
+	&__btn-next {
+		right: 0px;
+	}
+}

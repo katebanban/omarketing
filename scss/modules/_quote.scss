@@ -1,0 +1,32 @@
+.quote {
+	padding: 130px 0;
+	background: var(--white);
+
+	&__blockquote {
+		max-width: 650px;
+		margin: 0 auto;
+		text-align: center;
+
+		font-family: var(--third-font);
+		font-weight: 300;
+		font-style: italic;
+	}
+
+	&__text {
+		margin: 0;
+
+		font-size: rem(18);
+		line-height: lh(36, 18);
+		color: var(--title-color);
+
+		&:not(:last-child) {
+			margin-bottom: 50px;
+		}
+	}
+
+	&__author {
+		font-size: rem(14);
+		line-height: lh(32, 14);
+		color: var(--portfolio-btn-hover);
+	}
+}

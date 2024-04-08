@@ -1,0 +1,57 @@
+.video {
+	padding: 130px 0;
+	position: relative;
+
+	video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__btn {
+		position: relative;
+		z-index: 2;
+
+		padding: 0;
+		border: none;
+		background: transparent;
+
+		display: block;
+		margin: 0 auto;
+
+		svg {
+			display: block;
+
+			path {
+				transition: all 0.3s;
+			}
+		}
+
+		&:hover {
+			svg path {
+				fill: var(--yellow);
+			}
+		}
+
+		&.active {
+			.video__btn-play {
+				display: none;
+			}
+
+			.video__btn-pause {
+				display: block;
+			}
+		}
+	}
+
+	&__btn-play {
+
+	}
+
+	&__btn-pause {
+		display: none;
+	}
+}
