@@ -2,12 +2,29 @@
 	padding-top: 130px;
 	background: var(--white);
 
+	@media (max-width: 1024px) {
+		padding-top: 90px;
+	}
+
+	@media (max-width: 550px) {
+		padding-top: 60px;
+	}
+
 	&__header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		gap: 30px; // отступ безопасности на глаз
 		margin-bottom: 90px;
+
+		@media (max-width: 1024px) {
+			margin-bottom: 32px;
+		}
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
 	}
 
 	&__title {
@@ -22,6 +39,11 @@
 		list-style-type: none;
 
 		display: flex;
+		gap: 5px 15px;
+
+		@media (max-width: 550px) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__list {
@@ -31,6 +53,10 @@
 
 		&:not(:last-child) {
 			margin-bottom: 70px;
+
+			@media (max-width: 550px) {
+				margin-bottom: 40px;
+			}
 		}
 	}
 
@@ -62,9 +88,9 @@
 
 .filter-list {
 	&__item {
-		&:not(:last-child) {
-			margin-right: 15px;
-		}
+		//&:not(:last-child) {
+		//	margin-right: 15px;
+		//}
 	}
 
 	&__btn {
@@ -124,6 +150,18 @@
 
 	@media (min-width: 1440px) {
 		grid-auto-rows: minmax(20px, auto);
+	}
+
+	@media (max-width: 1024px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media (max-width: 768px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (max-width: 550px) {
+		grid-template-columns: 1fr;
 	}
 
 	&__item {
