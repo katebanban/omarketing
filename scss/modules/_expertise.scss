@@ -2,6 +2,14 @@
 	background: var(--white);
 	padding: 130px 0;
 
+	@media (max-width: 1024px) {
+		padding: 90px 0;
+	}
+
+	@media (max-width: 550px) {
+		padding: 60px 0;
+	}
+
 	&__body {
 	}
 
@@ -10,6 +18,10 @@
 
 		&:not(:last-child) {
 			margin-bottom: 90px;
+
+			@media (max-width: 1024px) {
+				margin-bottom: 32px;
+			}
 		}
 	}
 
@@ -18,8 +30,16 @@
 		justify-content: space-between;
 		gap: 50px; // на глаз
 
+		@media (max-width: 1024px) {
+			display: block;
+		}
+
 		&:not(:last-child) {
 			margin-bottom: 110px;
+
+			@media (max-width: 1024px) {
+				margin-bottom: 40px;
+			}
 		}
 	}
 
@@ -29,6 +49,10 @@
 		list-style-type: none;
 
 		flex: 0 0 370px;
+
+		@media (max-width: 1024px) {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__info-text {
@@ -39,6 +63,10 @@
 
 			&:not(:last-child) {
 				margin-bottom: 25px;
+
+				@media (max-width: 1024px) {
+					margin-bottom: 16px;
+				}
 			}
 		}
 		
@@ -52,6 +80,15 @@
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 40px; // на глаз
+
+		@media (max-width: 1024px) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 30px;
+		}
+
+		@media (max-width: 768px) {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&__card {
@@ -104,6 +141,10 @@
 
 		&:not(:last-child) {
 			margin-bottom: 18px;
+
+			@media (max-width: 768px) {
+				margin-bottom: 10px;
+			}
 		}
 	}
 
