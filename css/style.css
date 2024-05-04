@@ -666,10 +666,34 @@ body {
   padding: 130px 0;
   position: relative;
 }
+@media (max-width: 1024px) {
+  .magic {
+    padding: 90px 0;
+  }
+}
+@media (max-width: 550px) {
+  .magic {
+    padding: 60px 0;
+  }
+}
 .magic__body {
   max-width: 50%;
   margin-left: auto;
   padding-left: 130px;
+}
+@media (max-width: 1024px) {
+  .magic__body {
+    padding-left: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .magic__body {
+    max-width: 100%;
+    margin-left: unset;
+    padding-left: unset;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .magic__img {
   position: absolute;
@@ -677,6 +701,14 @@ body {
   left: 0;
   width: 50%;
   height: 100%;
+}
+@media (max-width: 768px) {
+  .magic__img {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    order: 3;
+  }
 }
 .magic__img img {
   position: absolute;
@@ -690,14 +722,35 @@ body {
 .magic__title {
   margin: 0;
 }
+@media (max-width: 768px) {
+  .magic__title {
+    order: 1;
+  }
+}
 .magic__title:not(:last-child) {
   margin-bottom: 65px;
+}
+@media (max-width: 1024px) {
+  .magic__title:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .magic__text {
+    order: 2;
+    margin-bottom: 32px;
+  }
 }
 .magic__text p {
   margin: 0;
 }
 .magic__text p:not(:last-child) {
   margin-bottom: 25px;
+}
+@media (max-width: 1024px) {
+  .magic__text p:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 .portfolio {
