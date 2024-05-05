@@ -972,6 +972,16 @@ body {
   padding: 130px 0;
   background: var(--white);
 }
+@media (max-width: 1024px) {
+  .quote {
+    padding: 90px 0;
+  }
+}
+@media (max-width: 550px) {
+  .quote {
+    padding: 60px 0;
+  }
+}
 .quote__blockquote {
   max-width: 650px;
   margin: 0 auto;
@@ -988,6 +998,11 @@ body {
 }
 .quote__text:not(:last-child) {
   margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .quote__text:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 .quote__author {
   font-size: 0.875rem;
@@ -1040,6 +1055,16 @@ body {
   padding: 130px 0;
   background: var(--white);
 }
+@media (max-width: 1024px) {
+  .facts {
+    padding: 90px 0;
+  }
+}
+@media (max-width: 550px) {
+  .facts {
+    padding: 60px 0;
+  }
+}
 .facts__list {
   margin: 0;
   padding: 0;
@@ -1049,8 +1074,23 @@ body {
   justify-content: space-around;
   gap: 30px;
 }
+@media (max-width: 768px) {
+  .facts__list {
+    flex-wrap: wrap;
+  }
+}
 .facts__item {
   text-align: center;
+}
+@media (max-width: 768px) {
+  .facts__item {
+    flex: 0 1 45%;
+  }
+}
+@media (max-width: 550px) {
+  .facts__item {
+    flex: 0 1 100%;
+  }
 }
 .facts__item span {
   display: block;

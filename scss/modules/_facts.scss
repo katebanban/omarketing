@@ -2,6 +2,14 @@
 	padding: 130px 0;
 	background: var(--white);
 
+	@media (max-width: 1024px) {
+		padding: 90px 0;
+	}
+
+	@media (max-width: 550px) {
+		padding: 60px 0;
+	}
+
 	&__list {
 		margin: 0;
 		padding: 0;
@@ -11,10 +19,22 @@
 		align-items: center;
 		justify-content: space-around;
 		gap: 30px;
+
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__item {
 		text-align: center;
+
+		@media (max-width: 768px) {
+			flex: 0 1 45%;
+		}
+
+		@media (max-width: 550px) {
+			flex: 0 1 100%;
+		}
 		
 		span {
 			display: block;
