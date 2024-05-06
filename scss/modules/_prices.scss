@@ -2,6 +2,14 @@
 	background: var(--light-grey);
 	padding: 130px 0;
 
+	@media (max-width: 1024px) {
+		padding: 90px 0;
+	}
+
+	@media (max-width: 550px) {
+		padding: 60px 0;
+	}
+
 	&__body {
 	}
 
@@ -10,6 +18,10 @@
 
 		&:not(:last-child) {
 			margin-bottom: 90px;
+
+			@media (max-width: 1024px) {
+				margin-bottom: 32px;
+			}
 		}
 	}
 
@@ -25,6 +37,14 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: var(--gap);
+
+		@media (max-width: 1024px) {
+			--column: 2;
+		}
+
+		@media (max-width: 768px) {
+			--column: 1;
+		}
 	}
 
 	&__item {

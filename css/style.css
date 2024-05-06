@@ -1337,11 +1337,26 @@ body {
   background: var(--light-grey);
   padding: 130px 0;
 }
+@media (max-width: 1024px) {
+  .prices {
+    padding: 90px 0;
+  }
+}
+@media (max-width: 550px) {
+  .prices {
+    padding: 60px 0;
+  }
+}
 .prices__title {
   margin: 0;
 }
 .prices__title:not(:last-child) {
   margin-bottom: 90px;
+}
+@media (max-width: 1024px) {
+  .prices__title:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 .prices__list {
   margin: 0;
@@ -1353,6 +1368,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap);
+}
+@media (max-width: 1024px) {
+  .prices__list {
+    --column: 2;
+  }
+}
+@media (max-width: 768px) {
+  .prices__list {
+    --column: 1;
+  }
 }
 .prices__item {
   flex: 0 1 var(--width);
