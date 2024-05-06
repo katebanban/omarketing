@@ -1,6 +1,10 @@
 .partners {
 	background: var(--white);
-	padding: 70px 0 95px;
+	padding: 90px 0;
+
+	@media (max-width: 550px) {
+		padding: 60px 0;
+	}
 
 	&__body {
 	}
@@ -12,9 +16,9 @@
 
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
-		gap: 55px;
-		//flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px 55px;
+		flex-wrap: wrap;
 	}
 
 	&__item {

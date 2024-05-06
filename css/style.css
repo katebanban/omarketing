@@ -1451,7 +1451,12 @@ body {
 
 .partners {
   background: var(--white);
-  padding: 70px 0 95px;
+  padding: 90px 0;
+}
+@media (max-width: 550px) {
+  .partners {
+    padding: 60px 0;
+  }
 }
 .partners__list {
   margin: 0;
@@ -1459,8 +1464,9 @@ body {
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 55px;
+  justify-content: center;
+  gap: 30px 55px;
+  flex-wrap: wrap;
 }
 .partners__item img {
   display: block;
