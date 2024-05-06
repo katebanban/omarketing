@@ -1116,6 +1116,16 @@ body {
   position: relative;
   padding: 0 95px;
 }
+@media (max-width: 768px) {
+  .featured__body {
+    padding: 0 70px;
+  }
+}
+@media (max-width: 550px) {
+  .featured__body {
+    padding: 0;
+  }
+}
 .featured-slider__pagination {
   position: absolute;
   z-index: 3;
@@ -1125,6 +1135,17 @@ body {
   align-items: center;
   gap: 13px;
 }
+@media (max-width: 1024px) {
+  .featured-slider__pagination {
+    bottom: 90px !important;
+  }
+}
+@media (max-width: 550px) {
+  .featured-slider__pagination {
+    gap: 15px;
+    bottom: 60px !important;
+  }
+}
 .featured-slider__pagination span {
   width: 6px;
   height: 6px;
@@ -1133,11 +1154,23 @@ body {
   background: var(--portfolio-btn-hover);
   transition: background 0.3s;
 }
+@media (max-width: 550px) {
+  .featured-slider__pagination span {
+    width: 10px;
+    height: 10px;
+  }
+}
 .featured-slider__pagination span.swiper-pagination-bullet-active {
   width: 10px;
   height: 10px;
   opacity: 1;
   background: var(--title-color);
+}
+@media (max-width: 550px) {
+  .featured-slider__pagination span.swiper-pagination-bullet-active {
+    width: 15px;
+    height: 15px;
+  }
 }
 .featured-slider__btn {
   padding: 0;
@@ -1146,6 +1179,11 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+@media (max-width: 550px) {
+  .featured-slider__btn {
+    display: none;
+  }
 }
 .featured-slider__btn svg {
   display: block;
@@ -1160,6 +1198,16 @@ body {
 .featured-slide__wrapper {
   padding: 150px 0;
 }
+@media (max-width: 1024px) {
+  .featured-slide__wrapper {
+    padding: 90px 0 135px;
+  }
+}
+@media (max-width: 550px) {
+  .featured-slide__wrapper {
+    padding: 60px 0 105px;
+  }
+}
 .featured-slide__title {
   margin: 0;
   max-width: 625px;
@@ -1169,6 +1217,21 @@ body {
   line-height: 162.5%;
   color: var(--title-color);
   text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .featured-slide__title {
+    font-size: 1.875rem;
+  }
+}
+@media (max-width: 768px) {
+  .featured-slide__title {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 550px) {
+  .featured-slide__title {
+    font-size: 1.375rem;
+  }
 }
 .featured-slide__title:not(:last-child) {
   margin-bottom: 10px;

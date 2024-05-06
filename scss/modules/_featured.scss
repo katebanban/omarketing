@@ -4,6 +4,14 @@
 	&__body {
 		position: relative;
 		padding: 0 95px;
+
+		@media (max-width: 768px) {
+			padding: 0 70px;
+		}
+
+		@media (max-width: 550px) {
+			padding: 0;
+		}
 	}
 
 	&__slider {
@@ -24,6 +32,15 @@
 		align-items: center;
 		gap: 13px;
 
+		@media (max-width: 1024px) {
+			bottom: 90px !important;
+		}
+
+		@media (max-width: 550px) {
+			gap: 15px;
+			bottom: 60px !important;
+		}
+
 		span {
 			width: 6px;
 			height: 6px;
@@ -32,11 +49,21 @@
 			background: var(--portfolio-btn-hover);
 			transition: background 0.3s;
 
+			@media (max-width: 550px) {
+				width: 10px;
+				height: 10px;
+			}
+
 			&.swiper-pagination-bullet-active {
 				width: 10px;
 				height: 10px;
 				opacity: 1;
 				background: var(--title-color);
+
+				@media (max-width: 550px) {
+					width: 15px;
+					height: 15px;
+				}
 			}
 		}
 	}
@@ -49,6 +76,10 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
+
+		@media (max-width: 550px) {
+			display: none;
+		}
 
 		svg {
 			display: block;
@@ -75,6 +106,14 @@
 .featured-slide {
 	&__wrapper {
 		padding: 150px 0;
+
+		@media (max-width: 1024px) {
+			padding: 90px 0 135px;
+		}
+
+		@media (max-width: 550px) {
+			padding: 60px 0 105px;
+		}
 	}
 
 	&__title {
@@ -88,6 +127,18 @@
 		line-height: lh(52, 32);
 		color: var(--title-color);
 		text-transform: uppercase;
+
+		@media (max-width: 1024px) {
+			font-size: rem(30);
+		}
+
+		@media (max-width: 768px) {
+			font-size: rem(28);
+		}
+
+		@media (max-width: 550px) {
+			font-size: rem(22);
+		}
 
 		&:not(:last-child) {
 			margin-bottom: 10px;
