@@ -3,6 +3,14 @@
 	background: var(--white);
 	padding: 130px 0;
 
+	@media (max-width: 1024px) {
+		padding: 90px 0;
+	}
+
+	@media (max-width: 550px) {
+		padding: 60px 0;
+	}
+
 	// .contacts__body
 
 	&__body {
@@ -39,6 +47,10 @@
 
 		&:not(:last-child) {
 			margin-bottom: 90px;
+
+			@media (max-width: 1024px) {
+				margin-bottom: 32px;
+			}
 		}
 	}
 
