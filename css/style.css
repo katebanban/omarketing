@@ -1478,14 +1478,26 @@ body {
     padding: 90px 0;
   }
 }
+@media (max-width: 768px) {
+  .contacts {
+    padding: 90px 0 0;
+  }
+}
 @media (max-width: 550px) {
   .contacts {
-    padding: 60px 0;
+    padding: 60px 0 0;
   }
 }
 .contacts__body {
   max-width: 50%;
   padding-right: 15px;
+}
+@media (max-width: 768px) {
+  .contacts__body {
+    max-width: 100%;
+    padding-right: unset;
+    margin-bottom: 40px;
+  }
 }
 .contacts__map {
   position: absolute;
@@ -1495,6 +1507,13 @@ body {
   height: 100%;
   filter: saturate(0);
   transition: all 0.3s;
+}
+@media (max-width: 768px) {
+  .contacts__map {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
 }
 .contacts__map:hover {
   filter: unset;
@@ -1548,6 +1567,11 @@ body {
 .form__textarea:not(:last-child) {
   margin-bottom: 50px;
 }
+@media (max-width: 768px) {
+  .form__textarea:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .form__btn {
   outline-color: var(--title-color);
   border: none;
@@ -1562,6 +1586,11 @@ body {
   color: var(--white);
   background: var(--title-color);
   transition: all 0.3s;
+}
+@media (max-width: 550px) {
+  .form__btn {
+    max-width: 100%;
+  }
 }
 .form__btn:hover {
   background: var(--yellow);
